@@ -24,12 +24,11 @@ public class Timer : MonoBehaviour
     private bool isRunning = false;
 
     public float StopTime { get => stopTime; set => stopTime = value; }
-    public float TimerTime { get => timerTime; set => timerTime = value; }
 
     // Use this for initialization
     void Start()
     {
-        TimerReset();
+        //TimerReset();
     }
 
     public void TimerStart()
@@ -49,7 +48,7 @@ public class Timer : MonoBehaviour
             print("STOP");
             isRunning = false;
             stopTime = timerTime;
-            Debug.Log(stopTime.ToString());
+            Debug.Log("Tiempo de juego" + stopTime.ToString());
             ///
             //if (stopTime >= 30)
             //{

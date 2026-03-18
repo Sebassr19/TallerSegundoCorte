@@ -7,32 +7,32 @@ public class GameManager : MonoBehaviour
 
     private float globalTime;
 
-    
+
 
     void Awake()
     {
-        
-        if(Instance != null && Instance != this)
+
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-            
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-          
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         globalTime = 0;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+
     }
 
     public void TotalTime(float timeScene)
